@@ -14,3 +14,13 @@ Con esta herramienta podremos obtener la siguiente informacion del dominio:
 - Enumerar la informacion de tosdos los usuarios
 
 # ¿COMO FUNCIONA?
+
+Ejecutar la  herramienta, da lugar al siguiente panel de ayuda que nos ayudara a ver todas las funciones, que esta herramienta es capaz de realizar.
+![image](https://github.com/user-attachments/assets/2baf0504-1931-4735-9f44-1d8424e4e104)
+
+
+Para su correcto funcionamiento tendremos que indicar, la IP el usuario con su contraseña (Si no los conocemos indicar la funcion -n para ejecutar una null session), y por ultimo el modo de enumeracion que queremos utilizar.
+
+![image](https://github.com/user-attachments/assets/af1a62f4-8435-44cd-b1f8-be81400e17bc)
+
+
