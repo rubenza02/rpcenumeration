@@ -24,3 +24,21 @@ Para su correcto funcionamiento tendremos que indicar, la IP el usuario con su c
 ![image](https://github.com/user-attachments/assets/af1a62f4-8435-44cd-b1f8-be81400e17bc)
 
 
+## Instalación y uso
+
+- Clonamos el respositorio en nuestro sistema
+```
+git clone https://github.com/rubenza02/rpcenumeration.git
+```
+
+- Le damos permisos de ejecucion al script en bash
+```
+chmod +x rpcenumeration.sh
+```
+
+- Ejcutamos el script pasandole los parametros obligatorios y los opcionales
+```
+./rpcenumeration.sh -s <IP> -u <USER> -p <PASSWORD> -f  MODE
+```
+
+
