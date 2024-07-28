@@ -13,3 +13,4 @@ Con esta herramienta podremos obtener la siguiente informacion del dominio:
 - Informacion del servidor
 - Enumerar la informacion de tosdos los usuarios
 
+# ¿COMO FUNCIONA?
