@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Función para mostrar la ayuda
+
 function mostrar_ayuda {
     echo -e "\e[34mUso: $0 -s <IP_DEL_SERVIDOR> [-u <USUARIO> -p <CONTRASEÑA>] [-n] -f <FUNCION>\e[0m"
     echo
@@ -24,14 +24,14 @@ function mostrar_ayuda {
     echo -e "  -h, --help         Mostrar esta ayuda"
 }
 
-# Variables
+
 SERVER_IP=""
 USERNAME=""
 PASSWORD=""
 FUNCTION=""
 NULLSESSION=0
 
-# Procesar argumentos
+
 while [[ "$#" -gt 0 ]]; do
     case $1 in
         -s|--server) SERVER_IP="$2"; shift ;;
@@ -45,20 +45,20 @@ while [[ "$#" -gt 0 ]]; do
     shift
 done
 
-# Verificar si se proporcionaron todos los argumentos necesarios
+
 if [[ -z "$SERVER_IP" || -z "$FUNCTION" ]]; then
     echo -e "\e[31mError: faltan argumentos.\e[0m"
     mostrar_ayuda
     exit 1
 fi
 
-# Determinar si se usará sesión nula
+
 if [[ $NULLSESSION -eq 1 ]]; then
     USERNAME=""
     PASSWORD=""
 fi
 
-# Funciones
+
 function enum_users {
     echo -e "\e[34mEnumerando usuarios en el servidor $SERVER_IP...\e[0m"
     printf "\e[1;34m%-20s %-10s\e[0m\n" "Usuario" "RID"
@@ -167,7 +167,7 @@ function full_report {
     querydispinfo
 }
 
-# Ejecutar la función especificada
+
 case $FUNCTION in
     enum_users) enum_users ;;
     enum_groups) enum_groups ;;
